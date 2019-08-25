@@ -1,0 +1,11 @@
+import React from 'react';
+
+
+const ExpenseDashboardPage = () => (
+    <div>
+        This is from my Dashboard Componenet
+    </div>
+);
+
+
+export default ExpenseDashboardPage;
