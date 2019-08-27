@@ -23,15 +23,14 @@ export const addExpense = (
 
 // EDIT_EXPENSE ACTION
 export const editExpense = (id, updates) => ({
-type: 'EDIT_EXPENSE',
-id,
-updates
+    type: 'UPDATE_EXPENSE',
+    id,
+    updates
 });
-
 
 
 // REMOVE_EXPENSE
 export const removeExpense = ({id} = {}) => ({
-type: 'REMOVE_EXPENSE',
-id
+    type: 'REMOVE_EXPENSE',
+    id
 });

@@ -13,7 +13,7 @@ export default (state = expensesReducerDefaultState, action) => {
                 return expense.id !== action.id;
             });
 
-        case 'EDIT_EXPENSE':
+        case 'UPDATE_EXPENSE':
             return state.map((expense) => {
                 if(expense.id === action.id) {
                     return {
