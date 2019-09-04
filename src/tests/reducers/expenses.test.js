@@ -83,4 +83,12 @@ test('Should update a selected expense', () => {
 
 
 
+ test('should set expenses', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses: [testData[1]]
+    };
 
+    const state = expensesReducer(testData, action);
+    expect(state).toEqual([testData[1]]);
+});
