@@ -14,24 +14,24 @@ exports[`Should render expense list with expenses 1`] = `
     amount={2}
     createdAt={0}
     description="Gum"
-    id={1}
-    key="1"
+    id="alsdjfklj"
+    key="alsdjfklj"
     note=""
   />
   <ExpenseListItem
     amount={109500}
     createdAt={-345600000}
     description="Rent"
-    id={2}
-    key="2"
+    id="23kwo8jhsdflk"
+    key="23kwo8jhsdflk"
     note=""
   />
   <ExpenseListItem
     amount={4500}
     createdAt={345600000}
     description="Credit Card"
-    id={3}
-    key="3"
+    id="slilsdfhueh"
+    key="slilsdfhueh"
     note=""
   />
 </div>

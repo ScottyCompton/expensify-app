@@ -14,6 +14,7 @@ export default (state = expensesReducerDefaultState, action) => {
             });
 
         case 'UPDATE_EXPENSE':
+            
             return state.map((expense) => {
                 if(expense.id === action.id) {
                     return {
@@ -24,6 +25,7 @@ export default (state = expensesReducerDefaultState, action) => {
                     return expense;
                 }
             });
+
         case 'SET_EXPENSES':
             return action.expenses;
 

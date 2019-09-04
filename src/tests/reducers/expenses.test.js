@@ -2,7 +2,7 @@ import expensesReducer from '../../reducers/expenses';
 import testData from '../fixtures/expenses';
 
 
-const existingTestExpenseId = 1;
+const existingTestExpenseId = "23kwo8jhsdflk";
 const newTestExpenseId = 4;
 const testExpense = {
     id: existingTestExpenseId,
@@ -22,7 +22,7 @@ test('Should remove an expense by id', () => {
 
     const action = {
         type: 'REMOVE_EXPENSE',
-        id: 2
+        id: "23kwo8jhsdflk"
     }
 
     const state = expensesReducer(testData, action)
@@ -64,7 +64,7 @@ test('Should update a selected expense', () => {
     };
 
     const state = expensesReducer(testData, action);
-    expect(state[0]).toEqual(testExpense);
+    expect(state[1]).toEqual(testExpense);
 
  });
 
