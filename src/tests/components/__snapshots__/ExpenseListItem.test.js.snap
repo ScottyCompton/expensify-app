@@ -1,19 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render single expense list item 1`] = `
-<div>
-  <h3>
-    <Link
-      replace={false}
-      to="/edit/alsdjfklj"
+<Link
+  className="list-item"
+  replace={false}
+  to="/edit/alsdjfklj"
+>
+  <div>
+    <h3
+      className="list-item__title"
     >
       Gum
-    </Link>
-  </h3>
-  <p>
-    $0.02
-    -
-    December 31st, 1969
-  </p>
-</div>
+    </h3>
+    <span
+      className="list-item__subtitle"
+    >
+      December 31st, 1969
+    </span>
+  </div>
+  <div>
+    <h3
+      className="list-item__data"
+    >
+      $0.02
+    </h3>
+  </div>
+</Link>
 `;

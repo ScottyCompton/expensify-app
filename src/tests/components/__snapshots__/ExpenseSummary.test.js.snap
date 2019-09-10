@@ -1,37 +1,112 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ExpenseSummary Component 1`] = `
-<div>
-  Viewing 
-  3
-   expense
-  <span>
-    s
-  </span>
-   totalling 
-  $1,140.02
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        3
+      </span>
+       expense
+      <span>
+        s
+      </span>
+       totalling 
+      <span>
+        $1,140.02
+      </span>
+    </h1>
+    <div
+      page-header__actions={true}
+    >
+      <Link
+        className="button button--primary"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Should render total from a single entry 1`] = `
-<div>
-  Viewing 
-  1
-   expense
-   totalling 
-  $0.02
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       expense
+       totalling 
+      <span>
+        $0.02
+      </span>
+    </h1>
+    <div
+      page-header__actions={true}
+    >
+      <Link
+        className="button button--primary"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Should render with an empty array 1`] = `
-<div>
-  Viewing 
-  0
-   expense
-  <span>
-    s
-  </span>
-   totalling 
-  $0.00
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        0
+      </span>
+       expense
+      <span>
+        s
+      </span>
+       totalling 
+      <span>
+        $0.00
+      </span>
+    </h1>
+    <div
+      page-header__actions={true}
+    >
+      <Link
+        className="button button--primary"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
