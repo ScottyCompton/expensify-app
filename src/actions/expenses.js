@@ -13,8 +13,8 @@ export const addExpense = (expense) => {
 export const startAddExpense = (expenseData = {}) => {
     return (dispatch, getState) => {
         const uid = getState().auth.uid;
-        const {description = '', note = '', amount = 0, createdAt = 0} = expenseData;
-        const expense = {description, amount, createdAt, note};
+        const {description = '', note = '', amount = 0, dueDate = 0} = expenseData;
+        const expense = {description, amount, dueDate, note};
 
         return db.ref(`users/${uid}/expenses`).push(expense).then((ref) => {
             dispatch(addExpense({

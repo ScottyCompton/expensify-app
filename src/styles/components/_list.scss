@@ -1,10 +1,26 @@
 .list-header {
-    background: $off-white;
+    background: $dark-blue;
     border: 1px solid darken($off-white, 7%);
-    color: $gray;
+    color: $off-white;
     display: flex;
     justify-content: space-between;
     padding: $s-size $m-size;
+}
+
+.list-header-title {
+    width: 65%;
+}
+
+.list-header-duedate {
+    width: 25%;
+    text-align: center;
+    min-width: 62px;
+}
+
+.list-header-amount {
+    width: 10%;
+    text-align: center;
+    min-width: 62px;
 }
 
 .list-body {
@@ -24,7 +40,8 @@
     text-decoration: none;
     transition: background .3 ease;
     &:hover {
-        background: $off-white;
+        background: $blue;
+        color: white;
     }
     @media(min-width: $desktop-breakpoint) {
         flex-direction: row;
@@ -34,14 +51,34 @@
     }
 }
 
-.list-item__title {
-    margin: 0;
-    word-break: break-all;
+.list-item:nth-child(odd) {
+    background: $off-white;
+    &:hover {
+        background: $blue;
+        color: white;
+    }
 }
 
-.list-item__subtitle {
-    color: $gray;
-    font-size: $font-size-sm;
+.list-item__wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.list-item__title {
+    width: 65%;
+    span {
+        margin: 0;
+        word-break: break-all;
+    }
+}
+
+.list-item__duedate {
+    width: 25%;
+    min-width: 62px;
+    text-align: center;
+    span {
+        font-size: $font-size-sm;
+    }
 }
 
 .list-item--message {
@@ -55,9 +92,15 @@
 }
 
 .list-item__data {
-    margin: $s-size 0 0 0;
-    @media(min-width: $desktop-breakpoint) {
-        margin: 0;
-        padding-left: $s-size;
+    width: 10%;
+    min-width: 62px;
+    text-align: center;
+    span {
+        text-align: right;
+        // margin: $s-size 0 0 0;
+        // @media(min-width: $desktop-breakpoint) {
+        //     margin: 0;
+        //     padding-left: $s-size;
+        // }
     }
 }

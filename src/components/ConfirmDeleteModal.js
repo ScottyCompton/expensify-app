@@ -10,8 +10,8 @@ const ConfirmDeleteModal = (props) => (
         className="modal"
     >
         <p className="modal__title">Delete This Expense?</p>
-        <button className="button btnCancel button--secondary" onClick={props.handleCloseModal}>Cancel</button>
-        <button className="button btnConfirm button--warning" onClick={props.handleRemove}>Confirm</button>
+        <button className="button btnCancel button--withspace button--secondary" onClick={props.handleCloseModal}>Cancel</button>
+        <button className="button btnConfirm button--withspace button--warning" onClick={props.handleRemove}>Confirm</button>
     </Modal>
 );
 

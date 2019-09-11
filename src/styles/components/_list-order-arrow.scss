@@ -1,0 +1,22 @@
+.sortorder-arrow>* {
+    text-decoration: none;
+    margin-left: $s-size;
+    display: inline-block;
+    width: 2rem;
+}
+
+.sortorder-arrow--asc a {
+    color: white;
+    position: relative;
+    top: 5px
+}
+
+.sortorder-arrow--desc a {
+    color: white;
+    position: relative;
+    top: -5px
+}
+
+.sortorder-arrow--inactive a {
+    color: $med-gray;
+}

@@ -20,8 +20,8 @@ const defaultAuthState = { auth: {uid} };
 beforeEach((done) => {
     const expensesData = {};
 
-    expenses.forEach(({id, description, note, amount, createdAt}) => {
-        expensesData[id] = {description, note, amount, createdAt};
+    expenses.forEach(({id, description, note, amount, dueDate}) => {
+        expensesData[id] = {description, note, amount, dueDate};
     });
     db.ref(`users/${uid}/expenses`).set(expensesData).then(() => done());
 }); 
@@ -65,7 +65,7 @@ test('Should add expense to the database and store', (done) => {
         description: 'Mouse',
         amount: 3000,
         note: 'This one is better',
-        createdAt: 1000
+        dueDate: 1000
     };
 
     store.dispatch(startAddExpense(expenseData)).then(() => {
@@ -98,7 +98,7 @@ test('Should add expense with defaults to the database and store', (done) => {
         description: '',
         amount: 0,
         note: '',
-        createdAt: 0
+        dueDate: 0
     };
 
     store.dispatch(startAddExpense({})).then(() => {
@@ -166,12 +166,12 @@ test('Should fetch the expenses from Firebase', (done) => {
         const actions = {
             type: tmpActions[0].type,
             expenses: tmpActions[0].sort((a,b) => {
-                return a.createdAt < b.createdAt ? 1 : -1;
+                return a.dueDate < b.dueDate ? 1 : -1;
             })
         }
 
         const testExpenses = expenses.sort((a,b) => {
-            return a.createdAt < b.createdAt ? 1 : -1;
+            return a.dueDate < b.dueDate ? 1 : -1;
         })
 
         expect(actions).toEqual({
@@ -192,7 +192,7 @@ test('Should update a given expense', (done) => {
         description: 'update test',
         note: 'update note',
         amount: 0,
-        createdAt: 0
+        dueDate: 0
     }
 
     store.dispatch(startEditExpense(id,updates))

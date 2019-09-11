@@ -14,3 +14,20 @@
         margin: 0 $s-size 0 0;
     }
 }
+
+.input-group__item a {
+    height: 50px;
+    color: $blue;
+    font-size: 50px;
+    line-height: inherit;
+    svg {
+        position: relative;
+        top: -14px;
+    }
+    @media(max-width:$desktop-breakpoint) {
+        font-size: $font-size-lg;
+        line-height: 1;
+        color: white;
+        height: inherit;
+    }
+}

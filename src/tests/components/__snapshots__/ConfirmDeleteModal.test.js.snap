@@ -23,13 +23,13 @@ exports[`Should render delete expense modal 1`] = `
     Delete This Expense?
   </p>
   <button
-    className="button btnCancel button--secondary"
+    className="button btnCancel button--withspace button--secondary"
     onClick={[Function]}
   >
     Cancel
   </button>
   <button
-    className="button btnConfirm button--warning"
+    className="button btnConfirm button--withspace button--warning"
     onClick={[Function]}
   >
     Confirm
@@ -60,13 +60,13 @@ exports[`Should render empty modal div 1`] = `
     Delete This Expense?
   </p>
   <button
-    className="button btnCancel button--secondary"
+    className="button btnCancel button--withspace button--secondary"
     onClick={[Function]}
   >
     Cancel
   </button>
   <button
-    className="button btnConfirm button--warning"
+    className="button btnConfirm button--withspace button--warning"
     onClick={[Function]}
   >
     Confirm

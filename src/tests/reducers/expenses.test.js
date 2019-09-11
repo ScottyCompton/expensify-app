@@ -8,7 +8,7 @@ const testExpense = {
     id: existingTestExpenseId,
     description: 'MOOO',
     note: 'OOOOINNK!',
-    createdAt: 0,
+    dueDate: 0,
     amount: 10000
 }; 
 

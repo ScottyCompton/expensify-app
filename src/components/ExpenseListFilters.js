@@ -2,6 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from '../actions/filters';
 import { DateRangePicker } from 'react-dates';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusSquare} from '@fortawesome/free-solid-svg-icons'
 
 export class ExpenseListFilters extends React.Component {
     constructor(props) {
@@ -43,15 +46,15 @@ export class ExpenseListFilters extends React.Component {
                     <div className="input-group__item">
                         <input placeholder="Search Expenses" className="text-input" type="text" value={this.props.filters.text} onChange={this.onTextChange} />
                     </div>
-                    <div className="input-group__item">
+                    {1==2 && <div className="input-group__item">
                         <select className="select"
                             value={this.props.filters.sortBy}
                             onChange={this.onSortChange}
                         >
-                            <option value="date">Date</option>
+                            <option value="date">Due Date</option>
                             <option value="amount">Amount</option>
                         </select>                    
-                    </div>
+                    </div>}
                     <div className="input-group__item">
                         <DateRangePicker 
                             startDate={this.props.filters.startDate}
@@ -65,6 +68,19 @@ export class ExpenseListFilters extends React.Component {
         
                         />                    
                     </div>
+                    <div className="input-group__item">
+                    
+                        <Link className="show-for-desktop" to="/create" title="Add New Expense">
+                            <FontAwesomeIcon icon={faPlusSquare} />
+                        </Link>
+
+                        
+                        <Link className="button button--primary show-for-mobile" to="/create" title="Add New Expense">
+                            Add New Expense
+                        </Link>
+
+
+                    </div>                    
                 </div>
                 
 

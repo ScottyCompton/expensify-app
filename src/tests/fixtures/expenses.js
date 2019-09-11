@@ -6,7 +6,7 @@ export default [
         description: "Gum",
         note: "",
         amount: 2,
-        createdAt: 0
+        dueDate: 0
     },
     
     {
@@ -14,14 +14,14 @@ export default [
         description: "Rent",
         note: "",
         amount: 109500,
-        createdAt: moment(0).subtract(4, "days").valueOf()
+        dueDate: moment(0).subtract(4, "days").valueOf()
     },
     {
         id: "slilsdfhueh",
         description: "Credit Card",
         note: "",
         amount: 4500,
-        createdAt: moment(0).add(4, "days").valueOf()
+        dueDate: moment(0).add(4, "days").valueOf()
     }
 ];
 

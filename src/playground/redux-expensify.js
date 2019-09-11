@@ -12,7 +12,7 @@ const addExpense = (
             description = '', 
             note = '', 
             amount = 0, 
-            createdAt = 0
+            dueDate = 0
         } = {}
 ) => ({
         type: 'ADD_EXPENSE',
@@ -21,7 +21,7 @@ const addExpense = (
             description,
             note,
             amount,
-            createdAt
+            dueDate
 
         }
     });
@@ -163,15 +163,15 @@ const store = createStore(
 
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
     return expenses.filter((expense) => {
-        const startDateMatch = typeof startDate !== 'number' || expense.createdAt >= startDate;
-        const endDateMatch = typeof endDate !== 'number' || expense.createdAt <= endDate;
+        const startDateMatch = typeof startDate !== 'number' || expense.dueDate >= startDate;
+        const endDateMatch = typeof endDate !== 'number' || expense.dueDate <= endDate;
         const textMatch = expense.description.toLowerCase().includes(text.toLowerCase());
 
         return startDateMatch && endDateMatch && textMatch
 
     }).sort((a,b) => {
         if(sortBy === 'date') {
-            return a.createdAt < b.createdAt ? 1 : -1;
+            return a.dueDate < b.dueDate ? 1 : -1;
         }
 
         if(sortBy === 'amount') {
@@ -196,7 +196,7 @@ const demoState = {
             description: 'January Rent',
             note: 'This was the final payment for that address',
             amount: 54500,
-            createdAt: 0
+            dueDate: 0
         }
     ],
     filters: {
@@ -209,8 +209,8 @@ const demoState = {
 */
 
 
-const expenseOne = store.dispatch(addExpense({description: 'Rent', amount: 100, createdAt: 1000}));
-const expenseTwo = store.dispatch(addExpense({description: 'Coffee', amount: 300, createdAt: -1000}));
+const expenseOne = store.dispatch(addExpense({description: 'Rent', amount: 100, dueDate: 1000}));
+const expenseTwo = store.dispatch(addExpense({description: 'Coffee', amount: 300, dueDate: -1000}));
 
 //store.dispatch(doNothing());
 

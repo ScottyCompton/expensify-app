@@ -81,7 +81,7 @@ test('Should call onSubmit prop for valid form submission', () =>{
     expect(onSubmitSpy).toHaveBeenLastCalledWith({
         amount: testData[0].amount,
         description: testData[0].description,
-        createdAt: testData[0].createdAt,
+        dueDate: testData[0].dueDate,
         note: testData[0].note
     });
 });
@@ -90,7 +90,7 @@ test('Should set new date onDateChange', () => {
     const now = moment();
     const wrapper = shallow(<ExpenseForm />);
     wrapper.find('SingleDatePicker').prop('onDateChange')(now);
-    expect(wrapper.state('createdAt')).toEqual(now);
+    expect(wrapper.state('dueDate')).toEqual(now);
 });
 
 

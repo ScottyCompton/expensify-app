@@ -5,21 +5,38 @@ exports[`Should render error for invalid form submission 1`] = `
   className="form"
   onSubmit={[Function]}
 >
+  <label
+    for="expense-description"
+  >
+    Description:
+  </label>
   <input
     autoFocus={true}
     className="text-input"
+    id="expense-description"
     onChange={[Function]}
-    placeholder="Description"
+    placeholder="Enter a brief description"
     type="text"
     value=""
   />
+  <lable
+    for="expense-amount"
+  >
+    Amount ($):
+  </lable>
   <input
     className="text-input"
+    id="expense-amount"
     onChange={[Function]}
-    placeholder="amount"
+    placeholder="Enter the amount in USD ($)"
     type="number"
     value=""
   />
+  <label
+    for="expense-duedate"
+  >
+    Due Date:
+  </label>
   <SingleDatePicker
     anchorDirection="left"
     customCloseIcon={null}
@@ -33,7 +50,7 @@ exports[`Should render error for invalid form submission 1`] = `
     focused={false}
     hideKeyboardShortcutsPanel={false}
     horizontalMargin={0}
-    id="date"
+    id="expense-duedate"
     initialVisibleMonth={null}
     inputIconPosition="before"
     isDayBlocked={[Function]}
@@ -96,17 +113,22 @@ exports[`Should render error for invalid form submission 1`] = `
     withFullScreenPortal={false}
     withPortal={false}
   />
+  <label
+    for="expense-note"
+  >
+    Expense Note (optional):
+  </label>
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional)"
+    placeholder="Add a note for this expense"
     value=""
   />
   <div
     className="form__buttons"
   >
     <button
-      className="button btnSubmit button--primary"
+      className="button btnSubmit button--withleftspace button--primary"
       type="submit"
     >
       Add Expense
@@ -125,21 +147,38 @@ exports[`Should render error for invalid form submission 2`] = `
   >
     Please provide a desscription and an amount.
   </p>
+  <label
+    for="expense-description"
+  >
+    Description:
+  </label>
   <input
     autoFocus={true}
     className="text-input"
+    id="expense-description"
     onChange={[Function]}
-    placeholder="Description"
+    placeholder="Enter a brief description"
     type="text"
     value=""
   />
+  <lable
+    for="expense-amount"
+  >
+    Amount ($):
+  </lable>
   <input
     className="text-input"
+    id="expense-amount"
     onChange={[Function]}
-    placeholder="amount"
+    placeholder="Enter the amount in USD ($)"
     type="number"
     value=""
   />
+  <label
+    for="expense-duedate"
+  >
+    Due Date:
+  </label>
   <SingleDatePicker
     anchorDirection="left"
     customCloseIcon={null}
@@ -153,7 +192,7 @@ exports[`Should render error for invalid form submission 2`] = `
     focused={false}
     hideKeyboardShortcutsPanel={false}
     horizontalMargin={0}
-    id="date"
+    id="expense-duedate"
     initialVisibleMonth={null}
     inputIconPosition="before"
     isDayBlocked={[Function]}
@@ -216,17 +255,22 @@ exports[`Should render error for invalid form submission 2`] = `
     withFullScreenPortal={false}
     withPortal={false}
   />
+  <label
+    for="expense-note"
+  >
+    Expense Note (optional):
+  </label>
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional)"
+    placeholder="Add a note for this expense"
     value=""
   />
   <div
     className="form__buttons"
   >
     <button
-      className="button btnSubmit button--primary"
+      className="button btnSubmit button--withleftspace button--primary"
       type="submit"
     >
       Add Expense
@@ -240,21 +284,38 @@ exports[`Should render expense form correctly 1`] = `
   className="form"
   onSubmit={[Function]}
 >
+  <label
+    for="expense-description"
+  >
+    Description:
+  </label>
   <input
     autoFocus={true}
     className="text-input"
+    id="expense-description"
     onChange={[Function]}
-    placeholder="Description"
+    placeholder="Enter a brief description"
     type="text"
     value=""
   />
+  <lable
+    for="expense-amount"
+  >
+    Amount ($):
+  </lable>
   <input
     className="text-input"
+    id="expense-amount"
     onChange={[Function]}
-    placeholder="amount"
+    placeholder="Enter the amount in USD ($)"
     type="number"
     value=""
   />
+  <label
+    for="expense-duedate"
+  >
+    Due Date:
+  </label>
   <SingleDatePicker
     anchorDirection="left"
     customCloseIcon={null}
@@ -268,7 +329,7 @@ exports[`Should render expense form correctly 1`] = `
     focused={false}
     hideKeyboardShortcutsPanel={false}
     horizontalMargin={0}
-    id="date"
+    id="expense-duedate"
     initialVisibleMonth={null}
     inputIconPosition="before"
     isDayBlocked={[Function]}
@@ -331,17 +392,22 @@ exports[`Should render expense form correctly 1`] = `
     withFullScreenPortal={false}
     withPortal={false}
   />
+  <label
+    for="expense-note"
+  >
+    Expense Note (optional):
+  </label>
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional)"
+    placeholder="Add a note for this expense"
     value=""
   />
   <div
     className="form__buttons"
   >
     <button
-      className="button btnSubmit button--primary"
+      className="button btnSubmit button--withleftspace button--primary"
       type="submit"
     >
       Add Expense
@@ -355,21 +421,38 @@ exports[`Should render form with data provided 1`] = `
   className="form"
   onSubmit={[Function]}
 >
+  <label
+    for="expense-description"
+  >
+    Description:
+  </label>
   <input
     autoFocus={true}
     className="text-input"
+    id="expense-description"
     onChange={[Function]}
-    placeholder="Description"
+    placeholder="Enter a brief description"
     type="text"
     value="Gum"
   />
+  <lable
+    for="expense-amount"
+  >
+    Amount ($):
+  </lable>
   <input
     className="text-input"
+    id="expense-amount"
     onChange={[Function]}
-    placeholder="amount"
+    placeholder="Enter the amount in USD ($)"
     type="number"
     value="0.02"
   />
+  <label
+    for="expense-duedate"
+  >
+    Due Date:
+  </label>
   <SingleDatePicker
     anchorDirection="left"
     customCloseIcon={null}
@@ -383,7 +466,7 @@ exports[`Should render form with data provided 1`] = `
     focused={false}
     hideKeyboardShortcutsPanel={false}
     horizontalMargin={0}
-    id="date"
+    id="expense-duedate"
     initialVisibleMonth={null}
     inputIconPosition="before"
     isDayBlocked={[Function]}
@@ -446,23 +529,28 @@ exports[`Should render form with data provided 1`] = `
     withFullScreenPortal={false}
     withPortal={false}
   />
+  <label
+    for="expense-note"
+  >
+    Expense Note (optional):
+  </label>
   <textarea
     className="textarea"
     onChange={[Function]}
-    placeholder="Add a note for your expense (optional)"
+    placeholder="Add a note for this expense"
     value=""
   />
   <div
     className="form__buttons"
   >
     <button
-      className="button btnRemove button--secondary"
+      className="button btnRemove button--secondary button--withleftspace button--secondary"
       type="button"
     >
       Remove
     </button>
     <button
-      className="button btnSubmit button--primary"
+      className="button btnSubmit button--withleftspace button--primary"
       type="submit"
     >
       Update Expense

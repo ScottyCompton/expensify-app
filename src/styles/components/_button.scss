@@ -25,4 +25,17 @@
     
     .button--warning {
         background: $warning-red;
+        color: white;
+    }
+    
+    .button--withleftspace {
+        margin: 0 0 0 $s-size;
+    }
+    
+    .button--withrightspace {
+        margin: 0 $s-size 0 0;
+    }
+    
+    .button--withspace {
+        margin: $s-size;
     }
