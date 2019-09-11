@@ -101,3 +101,14 @@ test('Should set calendar focus onchange', () => {
     expect(wrapper.state('calendarFocused')).toBe(focused);
 
 });
+
+
+
+test('Should handle remove open modal', () => {
+    const onSubmitSpy = jest.fn();
+    const onHandleOpenModalSpy = jest.fn();
+    const wrapper = shallow(<ExpenseForm expense={testData[0]} handleOpenModal={onHandleOpenModalSpy} onSubmit={onSubmitSpy} />);
+
+    wrapper.find('.btnRemove').simulate('click');
+    expect(onHandleOpenModalSpy).toHaveBeenCalled();
+});

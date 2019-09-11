@@ -30,12 +30,9 @@ exports[`Should render Edit Expense Page 1`] = `
       }
       onSubmit={[Function]}
     />
-    <button
-      className="button button--secondary"
-      onClick={[Function]}
-    >
-      Remove Expense
-    </button>
   </div>
+  <ConfirmDeleteModal
+    handleRemove={[Function]}
+  />
 </div>
 `;

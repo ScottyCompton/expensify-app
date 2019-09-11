@@ -12,7 +12,7 @@ export const ExpenseSummary = (props) => {
         <div className="page-header">
             <div className="content-container">
                 <h1 className="page-header__title">Viewing <span>{totalRecs}</span> expense{(totalRecs >= 2 || totalRecs === 0) && <span>s</span>} totalling <span>{numeral(totalAmt/100).format('$0,0.00')}</span></h1>        
-                <div page-header__actions>
+                <div className="page-header__actions">
                     <Link className="button button--primary" to="/create">Add Expense</Link>
                 </div>
             </div>

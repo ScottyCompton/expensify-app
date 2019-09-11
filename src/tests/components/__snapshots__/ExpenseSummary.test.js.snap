@@ -24,7 +24,7 @@ exports[`Should render ExpenseSummary Component 1`] = `
       </span>
     </h1>
     <div
-      page-header__actions={true}
+      className="page-header__actions"
     >
       <Link
         className="button button--primary"
@@ -59,7 +59,7 @@ exports[`Should render total from a single entry 1`] = `
       </span>
     </h1>
     <div
-      page-header__actions={true}
+      className="page-header__actions"
     >
       <Link
         className="button button--primary"
@@ -97,7 +97,7 @@ exports[`Should render with an empty array 1`] = `
       </span>
     </h1>
     <div
-      page-header__actions={true}
+      className="page-header__actions"
     >
       <Link
         className="button button--primary"

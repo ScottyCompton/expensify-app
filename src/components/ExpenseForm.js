@@ -48,6 +48,7 @@ export default class ExpenseForm extends React.Component {
         
     };
 
+
     onCalendarFocusChange = ({ focused }) => {
         this.setState(() => ({ calendarFocused: focused}));
     };
@@ -103,8 +104,9 @@ export default class ExpenseForm extends React.Component {
                         className="textarea"
                         >
                     </textarea>
-                    <div>
-                        <button className="button button--primary" type="submit">{this.state.btnText}</button>
+                    <div className="form__buttons">                    
+                        {this.props.expense && <button className="button btnRemove button--secondary" type="button" onClick={this.props.handleOpenModal}>Remove</button>}
+                        <button className="button btnSubmit button--primary" type="submit">{this.state.btnText}</button>
                     </div>
                 </form>
         );

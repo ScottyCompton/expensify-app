@@ -102,9 +102,11 @@ exports[`Should render error for invalid form submission 1`] = `
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <div>
+  <div
+    className="form__buttons"
+  >
     <button
-      className="button button--primary"
+      className="button btnSubmit button--primary"
       type="submit"
     >
       Add Expense
@@ -220,9 +222,11 @@ exports[`Should render error for invalid form submission 2`] = `
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <div>
+  <div
+    className="form__buttons"
+  >
     <button
-      className="button button--primary"
+      className="button btnSubmit button--primary"
       type="submit"
     >
       Add Expense
@@ -333,9 +337,11 @@ exports[`Should render expense form correctly 1`] = `
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <div>
+  <div
+    className="form__buttons"
+  >
     <button
-      className="button button--primary"
+      className="button btnSubmit button--primary"
       type="submit"
     >
       Add Expense
@@ -446,9 +452,17 @@ exports[`Should render form with data provided 1`] = `
     placeholder="Add a note for your expense (optional)"
     value=""
   />
-  <div>
+  <div
+    className="form__buttons"
+  >
     <button
-      className="button button--primary"
+      className="button btnRemove button--secondary"
+      type="button"
+    >
+      Remove
+    </button>
+    <button
+      className="button btnSubmit button--primary"
       type="submit"
     >
       Update Expense

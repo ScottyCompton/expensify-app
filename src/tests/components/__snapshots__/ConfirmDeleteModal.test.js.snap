@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render delete expense modal 1`] = `
+<Modal
+  ariaHideApp={true}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={200}
+  contentLabel="Confirm Delete"
+  isOpen={true}
+  onRequestClose={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <p
+    className="modal__title"
+  >
+    Delete This Expense?
+  </p>
+  <button
+    className="button btnCancel button--secondary"
+    onClick={[Function]}
+  >
+    Cancel
+  </button>
+  <button
+    className="button btnConfirm button--warning"
+    onClick={[Function]}
+  >
+    Confirm
+  </button>
+</Modal>
+`;
+
+exports[`Should render empty modal div 1`] = `
+<Modal
+  ariaHideApp={true}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={200}
+  contentLabel="Confirm Delete"
+  isOpen={false}
+  onRequestClose={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <p
+    className="modal__title"
+  >
+    Delete This Expense?
+  </p>
+  <button
+    className="button btnCancel button--secondary"
+    onClick={[Function]}
+  >
+    Cancel
+  </button>
+  <button
+    className="button btnConfirm button--warning"
+    onClick={[Function]}
+  >
+    Confirm
+  </button>
+</Modal>
+`;
