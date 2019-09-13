@@ -22,6 +22,7 @@ const AppRouter = () => (
                     timeout={600}
                     classNames="fade"
                 >
+                    <div>
                     <Switch location={location}>
                         <PublicRoute path="/" component={LoginPage} exact={true} />
                         <PrivateRoute path="/dashboard" component={ExpenseDashboardPage} />
@@ -29,6 +30,7 @@ const AppRouter = () => (
                         <PrivateRoute path="/edit/:id" component={EditExpensePage} />
                         <Route component={NotFoundPage} />
                     </Switch>
+                    </div>
                 </CSSTransition>
            </TransitionGroup>
             );
