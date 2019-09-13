@@ -86,7 +86,7 @@ export default class ExpenseForm extends React.Component {
                         onChange={this.onDescriptionChange}
                         autoFocus 
                     />
-                    <lable htmlFor="expense-amount">Amount ($):</lable>
+                    <label htmlFor="expense-amount">Amount ($):</label>
                     <input type="number"
                         id="expense-amount"
                         placeholder="Enter the amount in USD ($)" 
