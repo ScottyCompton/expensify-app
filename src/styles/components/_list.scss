@@ -38,9 +38,9 @@
     color: $dark-gray;
     padding: $s-size;
     text-decoration: none;
-    transition: background .3 ease;
+    transition: background-color .3s ease;
     &:hover {
-        background: $blue;
+        background-color: $blue;
         color: white;
     }
     @media(min-width: $desktop-breakpoint) {
@@ -52,9 +52,9 @@
 }
 
 .list-item:nth-child(odd) {
-    background: $off-white;
+    background-color: $off-white;
     &:hover {
-        background: $blue;
+        background-color: $blue;
         color: white;
     }
 }
@@ -81,16 +81,15 @@
     }
 }
 
-.list-item--message {
-    align-items: center;
-    justify-content: center;
-    color: $gray;
-    padding: $m-size;
-    &:hover {
-        background: none;
-    }
-}
-
+// .list-item--message {
+//     align-items: center;
+//     justify-content: center;
+//     color: $gray;
+//     padding: $m-size;
+//     &:hover {
+//         background: none;
+//     }
+// }
 .list-item__data {
     width: 10%;
     min-width: 62px;
