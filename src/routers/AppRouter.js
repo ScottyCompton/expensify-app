@@ -16,13 +16,7 @@ const AppRouter = () => (
     <Router history={history}>
         <Route render={({location}) => {
             return (
-                <TransitionGroup className="RTG">
-                <CSSTransition 
-                    key={location.key}
-                    timeout={600}
-                    classNames="fade"
-                >
-                    <div>
+
                     <Switch location={location}>
                         <PublicRoute path="/" component={LoginPage} exact={true} />
                         <PrivateRoute path="/dashboard" component={ExpenseDashboardPage} />
@@ -30,9 +24,7 @@ const AppRouter = () => (
                         <PrivateRoute path="/edit/:id" component={EditExpensePage} />
                         <Route component={NotFoundPage} />
                     </Switch>
-                    </div>
-                </CSSTransition>
-           </TransitionGroup>
+
             );
         }} />
 
